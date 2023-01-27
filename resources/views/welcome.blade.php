@@ -18,7 +18,56 @@
 </head>
 
 <body>
-    <h1 class="text-center mt-5">Gym Management</h1>
+    <div class="container">
+        <div class="row m-5">
+            <div class="col-md-8 mx-auto p-5 border shadow rounded">
+                <h1 class="fw-bold">Gym Management</h1>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Trainer</th>
+                            <th>Membership</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Expiration</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Testing</td>
+                            <td>Gold</td>
+                            <td>Joshua Zafe</td>
+                            <td>testing@123yahoo.com</td>
+                            <td>December 32, 2023</td>
+                            <td><button type="button" class="btn btn-light" data-bs-toggle="modal"
+                                    data-bs-target="#edit">⚙️</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

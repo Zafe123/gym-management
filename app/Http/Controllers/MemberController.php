@@ -43,7 +43,6 @@ class MemberController extends Controller
         $member->id = $request->input('id');
         $member->name = $request->input('name');
         $member->email = $request->input('email');
-        $member->membership_type = $request->input('membership_type');
         $member->membership_expiration = $request->input('membership_expiration');
         $member->save();
         return redirect()->route('members.index')->with('success', 'Member updated successfully.');

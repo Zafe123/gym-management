@@ -11,7 +11,6 @@ class Member extends Model
         'id',
         'name',
         'email',
-        'membership_type',
         'membership_expiration'
     ];
 }
