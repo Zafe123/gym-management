@@ -19,6 +19,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/trainer', function () {
+    return view('trainer');
+});
+
+Route::get('/membership', function () {
+    return view('membership');
+});
+
 
 Route::get('/members', [MemberController::class, 'index'])->name('members.index');
 Route::get('/members/create', [MemberController::class, 'create'])->name('members.create');
