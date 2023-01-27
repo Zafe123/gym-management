@@ -17,15 +17,15 @@ use App\Http\Controllers\MemberController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get('/trainer', function () {
     return view('trainer');
-});
+})->name('trainer');
 
 Route::get('/membership', function () {
     return view('membership');
-});
+})->name('membership');
 
 
 Route::get('/members', [MemberController::class, 'index'])->name('members.index');
